@@ -34,10 +34,31 @@ nav {
     display: block;
     height: 40px; 
     width: 100%;  
-    background: url(../images/hamburger.png) no-repeat 98% center; 
-    background-color: whitesmoke;  
+    background: url(../images/hamburger.png) no-repeat 50% center; 
+    background-color: whitesmoke;
+    cursor: pointer; 
 }
 
-nav ul {
-    display: 
+header nav ul {
+    overflow: hidden; 
+    background-color: ghostwhite; 
+    height: 0;
+}
+    
+header nav ul.open {
+    height: auto; 
+}
+
+
+header nav ul li {
+        text-align: center; 
+        width: 100%; 
+}
+header nav ul li a {
+    padding: 10px; 
+    text-decoration: none; 
+    display: block; 
+    margin: 0; 
+    border-bottom: 1px solid #303234; 
+    
 }
