@@ -17,8 +17,7 @@ body {
 .wrapper {
     max-width: 100%;
     background-color: whitesmoke; 
-    
-    
+ 
 }
 .wrapper-header {
      background: #303234; /* For browsers that do not support gradients */
@@ -27,39 +26,48 @@ body {
     background: -moz-linear-gradient#303234, #060606); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#303234, #060606); /* Standard syntax */
     padding: 7px; 
-    border-radius: 10px; 
+    border-radius: 10px;
+}
+
+.wrapper-header figure img {
+    height: auto; 
+    max-width: 100%; 
+    padding-top: 5%; 
 }
 
 nav {
-    background-color: #060606; 
+    max-width: 100%; 
+    
+}
+header figure {
+    float:left;
 }
 
-.burger-nav {
-    display: block;
-    height: 40px; 
-    max-width: 100%;  
-    background: url(../images/hamburger.png) no-repeat 50% center; 
-    fill: white; 
-    background-color: whitesmoke;
+.hamburger-menu {
+    fill: ghostwhite; 
+    margin-left: 90%; 
     cursor: pointer; 
 }
 
 header nav ul {
-    overflow: hidden; 
     background-color: whitesmoke; 
     height: 0;
+    max-width: 100%; 
+    border-radius: 10px;
+    
 }
 
     
 header nav ul.open {
-    height: auto; 
-    margin-bottom: 3%;  
+    height: auto;
+    position: relative; 
+    width: auto;  
+    margin-top: 2%; 
 }
 
 
 header nav ul li {
         text-align: center; 
-        max-width: 100%; 
 }
 
 header nav ul li:hover {
@@ -82,14 +90,14 @@ header nav ul li a {
 }
 aside figure {
     position: relative; 
-    padding: 5%; 
+    padding: 3%; 
     background-color: #303234; 
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     border-radius: 10px;
 }
 aside figure img { 
     height: auto; 
-    max-width: 75vw; 
+    max-width: 90vw; 
     margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -173,3 +181,40 @@ footer ul li a:hover {
 footer .bottom-footer {
     line-height: 0.5; 
 }
+
+@media (min-width: 1023px) {
+.wrapper-header {
+        height: 3em;  
+    }
+    
+.hamburger-menu {
+    display: none; 
+    visibility: hidden; 
+}
+
+header nav ul {
+    width: 100%; 
+}
+
+header nav ul li {
+    display: inline-block; 
+    font-size: 1.1em; 
+    color: orange;
+    width: 0%
+    
+}
+    
+aside figure {
+        position: relative; 
+        display: inline-block; 
+    padding: 0px; 
+    }
+aside .aside-left-text {
+        position: relative; 
+        display: inline-block;
+    }
+    
+}
+
+  
+    

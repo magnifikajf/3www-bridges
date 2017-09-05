@@ -1,7 +1,7 @@
 /*global $ */
 $(document).ready(function () {
     'use strict';
-    $(".burger-nav").on("click", function () {
+    $(".hamburger-menu").on("click", function () {
         $("header nav ul").toggleClass("open");
     });
 });
